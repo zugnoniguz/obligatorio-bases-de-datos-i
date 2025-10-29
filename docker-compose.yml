@@ -1,0 +1,18 @@
+networks:
+  obligatorio:
+
+services:
+  mysql:
+    image: docker.io/mysql:9.5.0
+    container_name: obligatorio_db
+    environment:
+      MYSQL_ROOT_PASSWORD: unsecreto
+    volumes:
+      - ./mysql_db:/var/lib/mysql
+
+  frontend:
+    container_name: obligatorio-frontend
+    image: obligatorio-bases-i/backend
+    build: ./back
+    ports:
+      - 8000:80
