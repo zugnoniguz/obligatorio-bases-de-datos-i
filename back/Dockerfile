@@ -9,7 +9,7 @@ COPY pyproject.toml uv.lock /app
 
 # Install the application dependencies
 WORKDIR /app
-RUN uv sync --frozen --no-cache
+RUN uv sync --locked --no-cache --compile-bytecode
 
 COPY ./app /app/app
 
