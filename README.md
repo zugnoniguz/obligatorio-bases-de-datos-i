@@ -14,8 +14,9 @@ simultaneamente.
 ### Corriendo con docker
 
 > [!WARNING]
-> Esta manera no es recomendada para desarrollar el proyecto, ya que no provee
-> recarga automática del código.
+> Utilizar esta método no es recomendado para desarrollar el proyecto, ya que
+> no provee recarga automática del código. Sin embargo, es la manera más fácil
+> de correr el proyecto para probarlo.
 
 Con `docker` y `docker-compose` instalados, se puede correr el siguiente
 comando para iniciar el proyecto.
